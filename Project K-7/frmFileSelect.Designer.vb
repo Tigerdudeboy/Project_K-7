@@ -156,10 +156,10 @@ Partial Class frmFileSelect
         'lblDescription
         '
         Me.lblDescription.AutoSize = True
-        Me.lblDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDescription.Location = New System.Drawing.Point(291, 97)
         Me.lblDescription.Name = "lblDescription"
-        Me.lblDescription.Size = New System.Drawing.Size(101, 31)
+        Me.lblDescription.Size = New System.Drawing.Size(83, 25)
         Me.lblDescription.TabIndex = 8
         Me.lblDescription.Text = "Label1"
         '

@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Project K-7.exe" size="29184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Project K-7.exe" size="30208">
       <assemblyIdentity name="Project K-7" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>yYvrsd0KZNgFQHVTjk8KCAFoMDQ=</dsig:DigestValue>
+        <dsig:DigestValue>ngpKxTvRki+Bss3Ng0dE2zC7T30=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
