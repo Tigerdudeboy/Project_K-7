@@ -10,6 +10,15 @@
 
     End Function
 
+    Private Sub Grow0(ByVal objSender As System.Object)
+        For Each Control In Me.Controls
+            If objSender.Location.y <= Control.Location.y Then
+                lblDescription.Text = lblDescription.Text + ", " + Control.Name
+
+            End If
+        Next
+    End Sub
+
     Public Sub Grow(ByVal objObject As System.Object, ByVal strObjectName As String)
         Dim dblNewFontSize As Integer = objObject.Font.Size
 
@@ -73,6 +82,14 @@
 
     End Sub
 
+    Private Sub frmFileSelect_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        For Each Control In Me.Controls
+            'lblDescription.Text = lblDescription.Text + ", " + Control.Name
+
+        Next
+
+    End Sub
+
     Private Sub tmrScroll_Tick(sender As System.Object, e As System.EventArgs) Handles tmrScroll.Tick
 
         lblUpdates.Text = MarqueeLeft(lblUpdates.Text)
@@ -100,7 +117,8 @@
     End Sub
 
     Private Sub lblNew_MouseHover(sender As Object, e As System.EventArgs) Handles lblNew.MouseHover
-        Grow(sender, "lblNew")
+        'Grow(sender, "lblNew")
+        Grow0(sender)
 
     End Sub
 
@@ -130,15 +148,6 @@
     End Sub
 
     Private Sub frmFileSelect_SizeChanged(sender As Object, e As System.EventArgs) Handles Me.SizeChanged
-        lneTitleDivider.X2 = Me.Width - 22
-
-        lneUpdatesDivider.X2 = Me.Width - 22
-
-        lneUpdatesDivider.Y1 = Me.Height - 86
-        lneUpdatesDivider.Y2 = Me.Height - 86
-
-        lneGameDivider.Y2 = Me.Height - 45
-
         lblUpdates.Text = strUpdates
 
         For intCount As Integer = (((Me.Width - 292) - lblUpdates.Width) / 7) - 1 To 0 Step -1
@@ -149,11 +158,6 @@
 
     Private Sub lblQuit_Click(sender As System.Object, e As System.EventArgs) Handles lblQuit.Click
         Me.Close()
-
-    End Sub
-
-    Private Sub frmFileSelect_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
 
     End Sub
 End Class

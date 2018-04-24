@@ -29,10 +29,6 @@ Partial Class frmFileSelect
         Me.lblLoad = New System.Windows.Forms.Label()
         Me.lblNew = New System.Windows.Forms.Label()
         Me.lblDev = New System.Windows.Forms.Label()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.lneUpdatesDivider = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.lneGameDivider = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.lneTitleDivider = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblQuit = New System.Windows.Forms.Label()
         Me.lblDescription = New System.Windows.Forms.Label()
@@ -96,40 +92,6 @@ Partial Class frmFileSelect
         Me.lblDev.TabIndex = 4
         Me.lblDev.Text = "Dev Game (WIP)"
         '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.lneUpdatesDivider, Me.lneGameDivider, Me.lneTitleDivider})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(573, 439)
-        Me.ShapeContainer1.TabIndex = 5
-        Me.ShapeContainer1.TabStop = False
-        '
-        'lneUpdatesDivider
-        '
-        Me.lneUpdatesDivider.Name = "lneUpdatesDivider"
-        Me.lneUpdatesDivider.X1 = 291
-        Me.lneUpdatesDivider.X2 = 567
-        Me.lneUpdatesDivider.Y1 = 391
-        Me.lneUpdatesDivider.Y2 = 391
-        '
-        'lneGameDivider
-        '
-        Me.lneGameDivider.Name = "lneGameDivider"
-        Me.lneGameDivider.X1 = 286
-        Me.lneGameDivider.X2 = 286
-        Me.lneGameDivider.Y1 = 97
-        Me.lneGameDivider.Y2 = 433
-        '
-        'lneTitleDivider
-        '
-        Me.lneTitleDivider.Name = "lneTitleDivider"
-        Me.lneTitleDivider.X1 = 5
-        Me.lneTitleDivider.X2 = 567
-        Me.lneTitleDivider.Y1 = 92
-        Me.lneTitleDivider.Y2 = 92
-        '
         'lblTitle
         '
         Me.lblTitle.Dock = System.Windows.Forms.DockStyle.Top
@@ -159,9 +121,9 @@ Partial Class frmFileSelect
         Me.lblDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDescription.Location = New System.Drawing.Point(291, 97)
         Me.lblDescription.Name = "lblDescription"
-        Me.lblDescription.Size = New System.Drawing.Size(83, 25)
+        Me.lblDescription.Size = New System.Drawing.Size(184, 25)
         Me.lblDescription.TabIndex = 8
-        Me.lblDescription.Text = "Label1"
+        Me.lblDescription.Text = "Description Text"
         '
         'frmFileSelect
         '
@@ -176,7 +138,6 @@ Partial Class frmFileSelect
         Me.Controls.Add(Me.lblLoad)
         Me.Controls.Add(Me.lblNew)
         Me.Controls.Add(Me.lblUpdates)
-        Me.Controls.Add(Me.ShapeContainer1)
         Me.MinimumSize = New System.Drawing.Size(589, 477)
         Me.Name = "frmFileSelect"
         Me.Text = "Project K-7"
@@ -190,11 +151,7 @@ Partial Class frmFileSelect
     Friend WithEvents lblLoad As System.Windows.Forms.Label
     Friend WithEvents lblNew As System.Windows.Forms.Label
     Friend WithEvents lblDev As System.Windows.Forms.Label
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
-    Friend WithEvents lneTitleDivider As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents lblTitle As System.Windows.Forms.Label
-    Friend WithEvents lneGameDivider As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents lneUpdatesDivider As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents lblQuit As System.Windows.Forms.Label
     Friend WithEvents lblDescription As System.Windows.Forms.Label
 

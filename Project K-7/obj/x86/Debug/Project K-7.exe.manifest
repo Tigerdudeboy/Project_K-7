@@ -42,19 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Project K-7.exe" size="30208">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Project K-7.exe" size="20480">
       <assemblyIdentity name="Project K-7" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ngpKxTvRki+Bss3Ng0dE2zC7T30=</dsig:DigestValue>
+        <dsig:DigestValue>irdRcPSbXRfulczxBdl+8KuPEw0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
